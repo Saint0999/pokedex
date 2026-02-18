@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Pokemon</title>
+
+<link rel="stylesheet" href="style.css">
+
+<!-- Modern font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Pokedex</h1>
+
+    <div class="top-controls">
+        <input type="text" id="pokemonName" placeholder="Enter Pokemon">
+        <button onclick="fetchData()" id="fetch-btn">Search</button>
+    </div>
+
+    <div class="pokemon-layout">
+
+    <!-- LEFT SIDE -->
+    <div class="pokemon-left">
+        <img src="" alt="Pokemon Sprite"
+             id="pokemonSprite" style="display:none">
+    </div>
+
+    <!-- RIGHT SIDE -->
+    <div class="pokemon-right">
+        <h2 id="pokemonTitle"></h2>
+
+        <p><strong>Type:</strong> <span id="pokeType"></span></p>
+        <p><strong>Height:</strong> <span id="pokeHeight"></span></p>
+        <p><strong>Weight:</strong> <span id="pokeWeight"></span></p>
+        <p><strong>Ability:</strong> <span id="pokeAbility"></span></p>
+    </div>
+
+</div>
+
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

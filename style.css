@@ -1,0 +1,132 @@
+/* ===== RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ===== MAIN CARD ===== */
+.container {
+    width: 750px;
+    max-width: 90%;
+    padding: 30px;
+    border-radius: 20px;
+    background: rgba(255,255,255,0.07);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255,255,255,0.15);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.35);
+}
+
+/* ===== TITLE ===== */
+h1 {
+    text-align: center;
+    color: white;
+    margin-bottom: 25px;
+    font-weight: 700;
+}
+
+/* ===== TOP INPUT ===== */
+.top-controls {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+#pokemonName {
+    width: 60%;
+    padding: 12px;
+    border-radius: 12px;
+    border: none;
+    background: rgba(255,255,255,0.12);
+    color: white;
+    font-size: 1rem;
+    outline: none;
+}
+
+#pokemonName::placeholder {
+    color: rgba(255,255,255,0.6);
+}
+
+#fetch-btn {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 12px;
+    background: #38bdf8;
+    color: #0f172a;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+#fetch-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(56,189,248,0.4);
+}
+
+/* ===== SPLIT LAYOUT ===== */
+.pokemon-layout {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.pokemon-left,
+.pokemon-right {
+    flex: 1;
+    min-width: 0;
+}
+
+/* LEFT SIDE */
+.pokemon-left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#pokemonSprite {
+    display: block;
+    width: 320px;      /* BIG size */
+    max-width: 100%;   /* IMPORTANT */
+    height: auto;
+    image-rendering: pixelated;
+    filter: drop-shadow(0 15px 25px rgba(0,0,0,0.45));
+}
+
+/* RIGHT SIDE */
+.pokemon-right {
+    flex: 1;
+    color: white;
+    min-width: 0;
+    display: none;
+}
+
+.pokemon-right h2 {
+    margin-bottom: 12px;
+    font-size: clamp(1.4rem, 2.5vw, 2rem);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 1.1;
+}
+
+.pokemon-right p {
+    margin: 8px 0;
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+
