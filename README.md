@@ -29,11 +29,11 @@ A pokemon haven, consisting over 1300+ pokemons. Will be updating later !
 ## 📦 How to Run Locally
 
 1. Clone the repository:
-
-   ```bash
+```bash
 git clone https://github.com/your-username/pokedex-app.git
+```
 
-3. Open the project folder.
+2. Open the project folder.
 
-4. Run intro.html using Live Server (or open directly in the browser)
+3. Run intro.html using Live Server (or open directly in the browser)
 
